@@ -1,0 +1,43 @@
+/* font-family: 'Roboto', sans-serif; */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #645452;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+}
+
+#main {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+#img-div {
+    background-color: #544645;
+    padding: 1em;
+}
+
+.img__div--img {
+    width: 90%;
+    height: 10em;
+}
+
+::marker {
+    content: url("https://img.icons8.com/office/40/000000/computer.png");
+    height: 2em;
+}
