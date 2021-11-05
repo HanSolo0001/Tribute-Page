@@ -1,5 +1,8 @@
 /* font-family: 'Roboto', sans-serif; */
 
+
+/* font-family: 'Luckiest Guy', cursive; */
+
 *,
 *::before,
 *::after {
@@ -14,30 +17,108 @@
 
 body {
     margin: 0 auto;
-    background-color: #645452;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
+}
+
+p {
+    font-weight: 700;
+}
+
+.background {
+    background-image: url('./img/lego-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 #main {
     text-align: center;
+    margin-bottom: 5em;
 }
 
 #title {
+    font-family: 'Luckiest Guy', cursive, sans-serif;
     text-align: center;
-}
-
-#img-div {
-    background-color: #544645;
+    letter-spacing: .25em;
     padding: 1em;
+    text-shadow: 2px 2px 3px yellow, 4px 4px 5px white, 6px 6px 5px red;
 }
 
-.img__div--img {
-    width: 90%;
-    height: 10em;
+#image {
+    height: 5em;
 }
 
-::marker {
-    content: url("https://img.icons8.com/office/40/000000/computer.png");
-    height: 2em;
+.history__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list__item {
+    list-style: none;
+    font-weight: 700;
+    padding: 1em 1em 0 2.5em;
+    background: url('./img/icons8-lego-head-50.png') no-repeat 0% 60%;
+    background-size: 2em;
+}
+
+.list__item::before {
+    content: "";
+    display: block;
+    padding-top: 1em;
+    border-top: 3px solid black;
+    min-width: 215px;
+    max-width: 800px;
+}
+
+.list__text {
+    max-width: 60ch;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.more__info {
+    margin-top: 5em;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.more__link {
+    text-decoration: none;
+    color: rgb(61, 3, 3)
+}
+
+.footer {
+    padding: 1em;
+    text-align: center;
+    border-top: 5px solid black;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: rgb(61, 3, 3);
+}
+
+@media (min-width: 700px) {
+    #title {
+        font-size: 2rem;
+    }
+    #image {
+        height: 8em;
+    }
+}
+
+@media (min-width: 1100px) {
+    #title {
+        font-size: 2.3rem;
+    }
+    #image {
+        height: 12em;
+    }
+    .list__item {
+        background-position: 0% 100%;
+    }
 }
