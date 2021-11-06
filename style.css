@@ -9,12 +9,6 @@
     box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -23,6 +17,12 @@ body {
 
 p {
     font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .background {
@@ -41,13 +41,21 @@ p {
     font-family: 'Luckiest Guy', cursive, sans-serif;
     text-align: center;
     letter-spacing: .25em;
+    margin: 0;
     padding: 1em;
     text-shadow: 2px 2px 3px yellow, 4px 4px 5px white, 6px 6px 5px red;
 }
 
+#img-div {
+    margin: 0 auto;
+}
+
 #image {
-    width: 40%;
-    height: 5em;
+    margin: 0 auto;
+    width: 60%;
+    display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 .history__list {
@@ -107,17 +115,11 @@ p {
     #title {
         font-size: 2rem;
     }
-    #image {
-        height: 8em;
-    }
 }
 
 @media (min-width: 1100px) {
     #title {
-        font-size: 2.3rem;
-    }
-    #image {
-        height: 12em;
+        font-size: 3rem;
     }
     .list__item {
         background-position: 0% 100%;
